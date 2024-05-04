@@ -1,0 +1,165 @@
+/* News CSS.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0; /* Add to reset default margin */
+}
+
+.wrapper {
+    min-height: 100vh; /* Ensure the wrapper takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack the child elements vertically */
+}
+
+header {
+    background-color: #005daa;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #ccc; /* Add a gray border line at the bottom of the header */
+}
+
+.header-inner {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center;
+}
+
+.h3 {
+    color: #005daa;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+.university-name {
+    background-color: #005daa; /* Change the background color to blue */
+    color: #fff; /* Change the text color to white */
+    padding: 0.5rem 1rem; /* Add padding to improve readability */
+    font-family: "Times New Roman", Times, serif; /* Specify Times New Roman font */
+}
+
+nav {
+    background-color: #f4f4f4; /* Change the background color of the navigation bar */
+    color: #333; /* Change the text color of the navigation links */
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px; /* Add some space between the navigation links */
+}
+
+nav ul li:not(:last-child)::after {
+    content: "|"; /* Add the vertical bar between navigation links */
+    margin: 0 10px; /* Add spacing around the vertical bar */
+    color: #333; /* Color of the vertical bar */
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #333; /* Change the text color of the navigation links */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.active {
+    background-color: #ddd; /* Change the background color of the active navigation link */
+}
+
+.main {
+    flex: 1; /* Make the main content take up remaining space */
+    text-align: center; /* Center-align the content */
+    padding: 2rem;
+}
+
+.more-news {
+    color: #005daa;
+}
+
+
+
+
+.news-link {
+    color: blue; /* Color the news link blue */
+    margin-top: 10px; /* Add margin to separate it from other content */
+    text-align: center;
+}
+
+.left-image {
+    width: 50%;
+    height: auto;
+    float: left;
+    max-width: 100%;
+    margin-top: 86px; /* Adjust the margin-top value to leave enough space for the "News" title */
+}
+
+.right-images {
+    float: right; /* Float the container to the right */
+    width: calc(50% - 10px); /* Take up half of the width and leave space for the margin */
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Wrap the images if they exceed the container width */
+    margin-top: 29px; /* Adjusted to leave space for the "News" title */
+    margin-right: 10px; /* Add margin to separate it from the main content */
+}
+
+.small-image {
+    width: calc(50% - 5px); /* Set width for each image */
+    margin-right: 5px; /* Add a small margin between images */
+    margin-bottom: 5px; /* Add a small margin at the bottom of each row */
+}
+
+.more-news {
+    text-align: center; /* Center-align the "More News" title */
+    margin-top: 20px; /* Add some top margin to separate it from the previous content */
+}
+
+.bottom-images {
+    margin-top: 10px; /* Add some top margin to separate it from the title */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center-align the images horizontally */
+    flex-wrap: wrap; /* Allow the images to wrap to the next line if necessary */
+}
+
+.bottom-images .small-image {
+    width: calc(20% - 5px); /* Set width for each image */
+    margin: 5px; /* Add margin around each image */
+}
+
+.small-image:nth-child(3),
+.small-image:nth-child(4) {
+    margin-bottom: 20px; /* Add margin to create space at the bottom of image 3 and image 4 */
+}
+
+.small-image {
+    width: calc(50% - 5px); /* Set width for each image */
+    margin-right: 5px; /* Add a small margin between images */
+    margin-bottom: 20px; /* Add margin to create space between rows */
+    height: 200px; /* Set a fixed height for all images */
+}
+
+/* Adjust margin-top for image 5 */
+.small-image:nth-child(5) {
+    margin-top: 20px; /* Add margin to the top of image 5 */
+}
+
+
